@@ -1,0 +1,117 @@
+:root {
+  --header-color: #ffffff;
+  --yellow-color: #f6b42b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 100vw;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+.aTag{
+  text-decoration: none;
+  color: black;
+}
+
+
+/* NavBar Css started here */
+
+.header {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 18vh;
+  background-color: var(--header-color);
+  padding: 10px 80px;
+  box-shadow: 0px 0px 10px rgba(99, 99, 99, 0.267);
+}
+
+.navBar{
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.navLinks{
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  min-height: 100%;
+}
+
+.link{
+  font-weight: 500;
+  padding: 10px;
+}
+
+.navLinks .link:nth-child(1) {
+  font-weight: 500;
+  padding: 10px;
+  background-color: var(--yellow-color);
+  border-radius: 3px;
+}
+
+/* --------------------------------------------------- */
+
+
+/* HomePage Css */
+.homePage{
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homeLeftArea{
+  height: 100%;
+  min-width: 50%;
+  padding: 150px;
+}
+
+.homeLeftArea h1{
+  font-size: 60px;
+}
+
+.homeLeftArea h1 span{
+  color: var(--yellow-color);
+}
+
+.homeLeftArea > p {
+  font-size: 20px;
+  color: #767676;
+}
+
+
+/* home page image */
+.homeRightImg{
+  position: absolute;
+  min-width: 50%;
+  bottom: 0;
+  right: 0;
+}
+
+.hireMeBtn{
+  padding: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border: 0;
+  border-radius: 5px;
+  background-color: var(--yellow-color);
+  font-size: 25px;
+  font-weight: 100;
+}
+
