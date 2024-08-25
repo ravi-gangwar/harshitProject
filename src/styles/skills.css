@@ -1,0 +1,174 @@
+:root {
+  --header-color: #ffffff;
+  --yellow-color: #f6b42b;
+  --projectBGC: #f0f0f6;
+}
+
+.skillsBody {
+  background-color: #f1eff6;
+}
+
+main {
+  padding: 0 100px;
+}
+
+.skillsCardSection {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+.skillsAndLangsh1 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+.skillsPara {
+  margin-top: 20px;
+  text-align: center;
+  color: rgba(128, 128, 128, 0.79);
+}
+
+.skillCard {
+  min-height: 300px;
+  min-width: 300px;
+  max-width: 300px;
+  padding: 30px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.skillCardInnerDiv {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.skillsNameAndPercentage {
+  min-width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.skillsNameAndPercentage p {
+  color: rgba(128, 128, 128, 0.859);
+}
+
+.percentageBar {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 5px;
+  border: 1px solid var(--yellow-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  padding: 0 5px;
+}
+
+.bar {
+  max-height: 3px;
+  min-height: 3px;
+  min-width: 30%;
+  max-width: 100%;
+  border-radius: 10px;
+  background-color: var(--yellow-color);
+}
+
+.addSkillsDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.addSkillsPopup{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 11;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(128, 128, 128, 0.662);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.addskillInnerDiv{
+    min-width: 60%;
+    min-height: 70%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 100px;
+}
+
+.domainDiv h3{
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 25px;
+    color: rgba(51, 50, 50, 0.914);
+}
+
+.domainDiv input{
+    padding: 30px;
+    font-size: 20px;
+    background-color: #f1eff6;
+}
+
+.skillsListDiv h3{
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 25px;
+    color: rgba(51, 50, 50, 0.914);
+}
+
+.addskillsinputsdiv{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.skillsAddheadings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addSkillInputDiv{
+    min-width: 100%;
+    display: flex;
+}
+
+.addskillInnerDiv input:nth-child(1){
+    min-width: 70%;
+    margin-right: 30px;
+    padding: 30px;
+    font-size: 20px;
+    background-color: #f1eff6;
+}
+
+.addskillInnerDiv input:nth-child(2){
+    padding: 30px;
+    font-size: 20px;
+    background-color: #f1eff6;
+}
+
+.popupbuttons {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+.popupbuttons button:nth-child(1){
+    background-color: #f0f0f6;
+    color: red;
+    border: 1px solid red;
+}
+

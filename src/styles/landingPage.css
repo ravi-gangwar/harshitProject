@@ -1,6 +1,7 @@
 :root {
   --header-color: #ffffff;
   --yellow-color: #f6b42b;
+  --projectBGC: #f0f0f6;
 }
 
 * {
@@ -12,6 +13,11 @@ body {
   max-width: 100vw;
   font-family: "Inter", sans-serif;
   font-style: normal;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+  width: 0;
 }
 
 .aTag{
@@ -30,10 +36,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 18vh;
+  min-height: 15vh;
   background-color: var(--header-color);
   padding: 10px 80px;
   box-shadow: 0px 0px 10px rgba(99, 99, 99, 0.267);
+  z-index: 10 ;
 }
 
 .navBar{
@@ -115,3 +122,333 @@ body {
   font-weight: 100;
 }
 
+
+/* project section */
+
+.projects{
+  background-color: var(--projectBGC);
+  min-height: 100vh;
+  justify-content: center;
+  padding: 100px;
+}
+
+.project-heading{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.project-heading h1{
+  font-size: 40px;
+}
+
+.project-heading p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.projects-listing{
+  min-height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.card{
+  max-width: 380px;
+  min-height: 380px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: rgba(165, 165, 165, 0.506) solid 2px;
+  padding-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 30%;
+}
+
+.upCardArea{
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.downCardArea {
+  padding: 0 10px;
+}
+
+.techStacks{
+  display: flex;
+  margin-top: 10px;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.techStack-badge{
+  background-color: rgba(179, 179, 179, 0.785);
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: rgb(78, 76, 76);
+}
+
+.rec_section{
+  padding-top: 50px;
+  min-height: 100vh;
+}
+
+.recommensatios-heading{
+  text-align: center;
+  font-size: 30px;
+}
+
+.rec_section .p-heading {
+  text-align: center;
+}
+
+
+/* swiper css  */
+
+.swiper {
+  height: 330px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-wrapper{
+  max-width: 100%;
+}
+
+.swiper-slide{
+  max-width: 300px;
+  max-height: 250px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+
+.swiper-slide h3{
+  margin-top: 10px;
+}
+
+.p-swiperSlider{
+  margin-top: 20px;
+}
+.profile-dec{
+  display: flex;
+  align-items: center;
+}
+
+.profile-dec img{
+  display: flex;
+  align-items: center;
+  height: 80px;
+  margin: 20px;
+}
+
+/* Change the color of the pagination dots to yellow */
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: rgba(249, 241, 0, 0.657);
+  width: 12px; /* Increase the width */
+  height: 12px; /* Increase the height */
+  border-radius: 50%;
+  opacity: 60;
+}
+
+/* Optional: Change the color of the active dot to a different shade of yellow or another color */
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: gold;
+  width: 14px; /* Slightly larger active dot */
+  height: 14px;
+}
+
+
+
+.contactAndInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact{
+  min-width: 60vw;
+}
+
+.contact h1{
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.contactInsideDiv{
+  min-width: 100%;
+  min-height: 600px;
+  background-color: #fff;
+}
+
+
+/* form  */
+
+
+form {
+  max-width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #767676c3;
+  font-size: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  min-height: 50px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  background-color: rgba(216, 216, 217, 0.567);
+  font-size: 16px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  resize: none;
+}
+
+textarea{
+  min-height: 200px;
+}
+
+button {
+  background-color: var(--yellow-color);
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 20px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.info{
+  min-width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-heading {
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.contactInfoDivs{
+  min-height: fit-content;
+  max-width: 100%;
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.info-img-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.span-info-img{
+  padding: 10px;
+  background-color: var(--yellow-color);
+  border-radius: 50%;
+}
+
+.info-info-div{
+  padding: 0 10px;
+}
+
+
+.info-divs{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.info-divs h1{
+  color: #767676c2;
+}
+.info-divs p{
+  color: #767676c6;
+}
+
+.companyImages{
+  display: flex;
+  padding: 30px 20px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.companyImages img {
+  height: 200px;
+}
+
+
+footer{
+  background-color:#F1EFF6;
+  padding: 0px 100px;
+
+}
+
+.downFooterSection{
+  min-height: 20vh;
+  display: flex;
+}
+
+.footercomp{
+  min-height: 300px;
+min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footercomp p {
+  color: #767676c4;
+  font-size: 13px;
+}
+
+.rightFooterSection{
+  min-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+
+
+.linksDiv h1{
+  margin-bottom: 20px;
+}
+
+.linksDiv p{
+  margin-top: 10px;
+}
+
+.linksSpan{
+  gap: 10px;
+}
+
+.socialImg{
+  margin-top: 10px;
+}
+
+.copyrightSection{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.copyrightSection p {
+  color: #767676c5;
+}

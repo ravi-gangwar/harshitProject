@@ -17,7 +17,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="
+https://cdn.jsdelivr.net/npm/swiper@11.1.10/swiper-bundle.min.js
+"></script>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/swiper@11.1.10/swiper-bundle.min.css
+"
+      rel="stylesheet"
+    />
+    <title>Porfolio</title>
   </head>
   <body>
     <!-- NavBar code stated here -->
@@ -26,10 +42,10 @@
         <img src="../assests/logo.png" alt="logo" />
         <div class="navLinks">
           <span class="link" id="link">
-            <a class="aTag" href="">Home</a>
+            <a class="aTag" href="../screens/landingPage.html">Home</a>
           </span>
           <span class="link" id="link">
-            <a class="aTag" href="">Skills</a>
+            <a class="aTag" href="../screens/Skills.html">Skills</a>
           </span>
           <span class="link" id="link">Education</span>
           <span class="link" id="link">Projects</span>
@@ -70,7 +86,199 @@
       </section>
 
       <!-- Projects -->
-       
+
+      <section class="projects" id="projects">
+        <div class="project-heading">
+          <h1>Projects</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et est
+            alias perferendis sit <br />
+            suscipit magni iste! Quibusdam veritatis iure,
+          </p>
+        </div>
+        <div class="projects-listing"></div>
+
+        <section class="rec_section">
+          <h1 class="recommensatios-heading">Reccommendations</h1>
+          <p class="p-heading">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+            porro!
+          </p>
+          <p class="p-heading">
+            Lorem, ipsum dolor sit amet consectetur adipisicing !
+          </p>
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <section class="contactAndInfo">
+            <div class="contact">
+              <h1>Leave me Your info</h1>
+              <div class="contactInsideDiv">
+                <form action="#" method="post">
+                  <div>
+                    <label for="name">Your Full Name (required) </label>
+                    <input type="text" id="name" name="name" required />
+                  </div>
+
+                  <div>
+                    <label for="email">Your Email (required) </label>
+                    <input type="email" id="email" name="email" required />
+                  </div>
+
+                  <div>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" />
+                  </div>
+
+                  <div>
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                  </div>
+
+                  <div>
+                    <button type="submit">Send Message</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="info">
+              <h1 class="info-heading">Contact Information</h1>
+              <div class="contactInfoDivs">
+                <div class="info-img-div">
+                  <span class="span-info-img"><img src="../assests/contactPage/mail.png" alt="" /></span>
+                </div>
+                <div class="info-info-div">
+                  <div class="info-divs">
+                    <h1>Country</h1>
+                    <p>India</p>
+                  </div>
+                  <div class="info-divs">
+                    <h1>City</h1>
+                    <p>Bareilly</p>
+                  </div>
+                  <div class="info-divs">
+                    <h1>Streat</h1>
+                    <p>35 baroda</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contactInfoDivs">
+                <div class="info-img-div">
+                  <span class="span-info-img"><img src="../assests/contactPage/mail.png" alt="" /></span>
+                </div>
+                <div class="info-info-div">
+                  <div class="info-divs">
+                    <h1>Country</h1>
+                    <p>India</p>
+                  </div>
+                  <div class="info-divs">
+                    <h1>City</h1>
+                    <p>Bareilly</p>
+                  </div>
+                  <div class="info-divs">
+                    <h1>Streat</h1>
+                    <p>35 baroda</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contactInfoDivs">
+                <div class="info-img-div">
+                  <span class="span-info-img"><img src="../assests/contactPage/mail.png" alt="" /></span>
+                </div>
+                <div class="info-info-div">
+                  <div class="info-divs">
+                    <h1>Country</h1>
+                    <p>India</p>
+                  </div>
+                  <div class="info-divs">
+                    <h1>City</h1>
+                    <p>Bareilly</p>
+                  </div>
+                  <div class="info-divs">
+                    <h1>Streat</h1>
+                    <p>35 baroda</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section  class="companyImages">
+              <img src="../assests/Icons/Frame.png" alt="companyImages">
+              <img src="../assests/Icons/Frame (2).png" alt="companyImages">
+              <img src="../assests/Icons/Frame (1).png" alt="companyImages">
+              <img src="../assests/Icons/Frame (3).png" alt="companyImages">
+          </section>
+        </section>
+      </section>
     </main>
+
+    <footer>
+      <section class="uppperFooterSection">
+        <img src="../assests/logo.png" alt="">
+      </section>
+      <section class="downFooterSection">
+        <div class="footercomp">
+          <span>
+            <img src="../assests/FooterImgs/FooterCom1.png" alt="">
+            <p>4.5/5 Lorem, ipsum.</p>
+          </span>
+          <span>
+            <img src="../assests/FooterImgs/FooterCom2.png" alt="">
+            <p>9/10 Lorem, ipsum.</p>
+          </span>
+          <span>
+            <img src="../assests/FooterImgs/FooterCom3.png" alt="">
+            <p>4.5/5 Lorem, ipsum.</p>
+          </span>
+        </div>
+        <section class="rightFooterSection">
+          <div class="linksDiv">
+            <h1>Portfolio</h1>
+            <span class="linksSpan">
+              <p>Fronted Development</p>
+              <p>Backbond Development</p>
+              <p>Website Design</p>
+              <p>Machine Learning</p>
+              <p>Problem Solving & DSA</p>
+            </span>
+          </div>
+          <div class="linksDiv">
+            <h1>Quick Links</h1>
+            <span class="linksSpan">
+              <p>Home</p>
+              <p>Skills</p>
+              <p>Education</p>
+              <p>Projects</p>
+              <p>Recommendation</p>
+            </span>
+          </div>
+          <div class="linksDiv">
+            <h1>Connect</h1>
+            <span class="linksSpan">
+              <div class="scoialImageDiv">
+                <img class="socialImg" src="../assests/FooterImgs/Facebook.png" alt="Facebook">
+              </div>
+              <div>
+                <img class="socialImg" src="../assests/FooterImgs/Instagram.png" alt="Instagram">
+              </div>
+              <div>
+                <img class="socialImg" src="../assests/FooterImgs/LinkedIn.png" alt="Link">
+              </div>
+            </span>
+          </div>
+        </section>
+      </section>
+      <section class="copyrightSection">
+        <p>&#169; 2024 Copyright, All Right Reversed</p>
+      </section>
+    </footer>
+
+    <script type="module" src="../js/landingPage.js"></script>
   </body>
 </html>
