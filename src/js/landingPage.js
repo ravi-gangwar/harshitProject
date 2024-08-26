@@ -6,12 +6,14 @@ const projectListingDiv =
   document.getElementsByClassName("projects-listing")[0];
 
 // Define the card HTML as a string
-const cardHTML = (item) => {
+const cardHTML = (item, i) => {
+
+
   return `
       <div class="card">
         <img
           class="upCardArea"
-          src="../assests/ProjectsImages/Image.svg"
+          src="../assests/ProjectsImages/Image${i+1}.png"
           alt=""
         />
         <div class="downCardArea">
@@ -36,21 +38,21 @@ const cardHTML = (item) => {
 
 // Insert each card into the parent div
 for (let i = 0; i < projects.length; i++) {
-  projectListingDiv.insertAdjacentHTML("beforeend", cardHTML(projects[i]));
+  projectListingDiv.insertAdjacentHTML("beforeend", cardHTML(projects[i], i));
 }
 
 
 const swiperSlidesDiv = document.getElementsByClassName("swiper-wrapper")[0];
 
 // Define the card HTML as a string
-const swiperCard = (item) => {
+const swiperCard = (item, i) => {
   return `
     <div class="swiper-slide">
       <img class="rating_images" src="../assests/RecommandationsImg/Rating.png" alt="Rating">
       <h3>${item.heading}</h3>
       <p class="p-swiperSlider">${item.description}</p>
       <div class="profile-dec">
-        <img src="../assests/RecommandationsImg/Profile.png" alt="">
+        <img src="../assests/RecommandationsImg/Profile${(i+1) % 3 === 0 ? 3 : (i+1) % 3}.png" alt="">
         <div >
           <h3>${item.name}</h3>
           <p>${item.role}</p>
@@ -64,7 +66,7 @@ const swiperCard = (item) => {
 for (let i = 0; i < swiperCardData.length; i++) {
   swiperSlidesDiv.insertAdjacentHTML(
     "beforeend",
-    swiperCard(swiperCardData[i])
+    swiperCard(swiperCardData[i], i)
   );
 }
 

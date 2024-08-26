@@ -105,12 +105,11 @@ function handleAddSkillsPopup() {
     // Assuming skillsArray is an array where you want to add this new domain
     skillsArray.push(newDomain); // Add the new domain to skillsArray
     renderSkills(); // Call the render function to update the UI
-  }
-
-  // Hide the popup
-  const popup = document.getElementsByClassName("addSkillsPopup")[0];
-  if (popup) {
-    popup.style.display = "none";
+    // Hide the popup
+    const popup = document.getElementsByClassName("addSkillsPopup")[0];
+    if (popup) {
+      popup.style.display = "none";
+    }
   }
 }
 

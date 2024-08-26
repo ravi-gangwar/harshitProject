@@ -1,0 +1,58 @@
+.triangle {
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom: 20px solid #555;
+}
+
+.square0 {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  min-width: 20px;
+  height: 20px;
+  border: 2px solid #fc0000;
+  background-color: transparent;
+}
+
+.square1 {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  min-width: 20px;
+  height: 20px;
+  border: 2px solid #b3ff00d2;
+  background-color: transparent;
+}
+.square2 {
+  position: absolute;
+  top: 60%;
+  left: 80%;
+  min-width: 20px;
+  height: 20px;
+  border: 2px solid #fc0000;
+  background-color: transparent;
+}
+
+.circle0 {
+  position: absolute;
+  top: 40%;
+  right: 30%;
+  min-width: 20px;
+  height: 20px;
+  border: 2px solid #555;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.circle1 {
+    position: absolute;
+    top: 60%;
+    right: 60%;
+    min-width: 20px;
+    height: 20px;
+    border: 2px solid #e4fd05;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+  

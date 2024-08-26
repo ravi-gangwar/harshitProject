@@ -79,6 +79,12 @@ body {
   border-radius: 3px;
 }
 
+#nextImg{
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+}
+
 .hamburgerMenu {
   height: 40px;
   cursor: pointer;
@@ -368,6 +374,9 @@ textarea {
 }
 
 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--yellow-color);
   color: black;
   font-weight: bold;

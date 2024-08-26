@@ -63,17 +63,18 @@ main {
   max-width: 100%;
   min-height: 5px;
   border: 1px solid var(--yellow-color);
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
+  justify-content: start;
   align-items: center;
   margin-top: 8px;
-  padding: 0 5px;
+  padding: 0 2px;
 }
 
 .bar {
   max-height: 3px;
   min-height: 3px;
-  min-width: 30%;
+  min-width: 0%;
   max-width: 100%;
   border-radius: 10px;
   background-color: var(--yellow-color);
