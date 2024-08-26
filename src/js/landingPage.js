@@ -68,11 +68,14 @@ for (let i = 0; i < swiperCardData.length; i++) {
   );
 }
 
+
+
 // Initialize Swiper after adding slides
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
-  slidesPerView: 4,
+  slidesPerView: 5,
   spaceBetween: 20,
+  autoplay: true,
   pagination: {
     el: ".swiper-pagination",
   },

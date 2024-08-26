@@ -1,0 +1,358 @@
+@media (max-width: 575px) {
+  .header{
+    display: none;
+  }
+
+  .homePage{
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #header1{
+    display: flex;
+  }
+
+  .homeRightImg{
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .projects-listing {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .swiper {
+    height: 330px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactAndInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .companyImages {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .uppperFooterSection{
+    text-align: center;
+  }
+  .footercomp {
+    min-height: 300px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .downFooterSection {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .rightFooterSection {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+  }
+
+  footer {
+    max-width: 100vw;
+    background-color: #f1eff6;
+    padding: 0 0;
+  }
+
+  .card {
+    max-width: 90%;
+    min-width: 100%;
+    min-height: 250px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: rgba(165, 165, 165, 0.506) solid 2px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 30%;
+  }
+  .domainDiv input {
+    padding: 0px;
+    font-size: 20px;
+    background-color: #f1eff6;
+  }
+
+  .addskillInnerDiv {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    min-width: 70%;
+    max-width: 100%;
+    margin: 20px;
+    border-radius: 20px;
+  }
+  
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) { 
+  .header{
+    display: none;
+  }
+
+  #header1{
+    display: flex;
+  }
+
+
+  .homePage{
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .homeRightImg{
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .projects-listing {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .swiper {
+    height: 330px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactAndInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .companyImages {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .uppperFooterSection{
+    text-align: center;
+  }
+  .footercomp {
+    min-height: 300px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .downFooterSection {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .rightFooterSection {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+  .header{
+    display: none;
+  }
+
+  #header1{
+    display: flex;
+  }
+
+  .homePage{
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .homeRightImg{
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .projects-listing {
+    min-height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .swiper {
+    height: 330px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactAndInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .companyImages {
+    display: flex;
+    padding: 30px 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footercomp {
+    min-height: 300px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .downFooterSection {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rightFooterSection {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+ }
+
+ @media (min-width: 992px) and (max-width: 1199px) { 
+  .header{
+    display: flex;
+  }
+
+  #header1{
+    display: none;
+  }
+
+  .homePage{
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .homeRightImg{
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .projects-listing {
+    min-height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .swiper {
+    height: 330px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactAndInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .companyImages {
+    display: flex;
+    padding: 30px 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footercomp {
+    min-height: 300px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .downFooterSection {
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rightFooterSection {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+ }

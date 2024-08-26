@@ -1,0 +1,13 @@
+.navLinks .link:nth-child(1) {
+  font-weight: 500;
+  padding: 10px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.navLinks .link:nth-child(2) {
+  font-weight: 500;
+  padding: 10px;
+  background-color: var(--yellow-color);
+  border-radius: 3px;
+}
