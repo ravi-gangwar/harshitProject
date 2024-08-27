@@ -4,6 +4,10 @@
   --projectBGC: #f0f0f6;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -44,7 +48,7 @@ body {
   z-index: 10;
 }
 
-#header1{
+#header1 {
   display: none;
 }
 
@@ -79,7 +83,7 @@ body {
   border-radius: 3px;
 }
 
-#nextImg{
+#nextImg {
   height: 30px;
   width: 30px;
   margin-left: 10px;
@@ -164,7 +168,6 @@ body {
 
 /* home page image */
 .homeRightImg {
-
 }
 
 .hireMeBtn {

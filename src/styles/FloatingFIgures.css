@@ -1,58 +1,63 @@
 .triangle {
+  z-index: -1;
   width: 0;
   height: 0;
   border: 10px solid transparent;
-  border-bottom: 20px solid #555;
+  border-bottom: 20px solid #55555593;
 }
 
 .square0 {
+  z-index: -1;
   position: absolute;
   top: 30%;
   left: 40%;
   min-width: 20px;
   height: 20px;
-  border: 2px solid #fc0000;
+  border: 2px solid #fc000091;
   background-color: transparent;
 }
 
 .square1 {
+  z-index: -1;
   position: absolute;
   top: 60%;
   left: 10%;
   min-width: 20px;
   height: 20px;
-  border: 2px solid #b3ff00d2;
+  border: 2px solid #b3ff009f;
   background-color: transparent;
 }
 .square2 {
+  z-index: -1;
   position: absolute;
   top: 60%;
   left: 80%;
   min-width: 20px;
   height: 20px;
-  border: 2px solid #fc0000;
+  border: 2px solid #fc0000a2;
   background-color: transparent;
 }
 
 .circle0 {
+  min-width: 20px;
+  z-index: -1;
   position: absolute;
   top: 40%;
   right: 30%;
-  min-width: 20px;
   height: 20px;
-  border: 2px solid #555;
+  border: 2px solid #55555593;
   border-radius: 50%;
   background-color: transparent;
 }
 
 .circle1 {
-    position: absolute;
-    top: 60%;
-    right: 60%;
-    min-width: 20px;
-    height: 20px;
-    border: 2px solid #e4fd05;
-    border-radius: 50%;
-    background-color: transparent;
-  }
-  
+  z-index: -1;
+  position: absolute;
+  top: 60%;
+  right: 60%;
+  min-width: 20px;
+  height: 20px;
+  border: 2px solid #e4fd05a1;
+  border-radius: 50%;
+  background-color: transparent;
+}

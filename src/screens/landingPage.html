@@ -42,10 +42,18 @@ https://cdn.jsdelivr.net/npm/swiper@11.1.10/swiper-bundle.min.css
           <span class="link" id="link">
             <a class="aTag" href="../screens/Skills.html">Skills</a>
           </span>
-          <span class="link" id="link">Education</span>
-          <span class="link" id="link">Projects</span>
-          <span class="link" id="link">Recommensatios</span>
-          <span class="link" id="link">Contact</span>
+          <span class="link" id="link">
+            <a class="aTag" href="#">Education</a>
+          </span>
+          <span class="link" id="link">
+            <a class="aTag" href="#projects">Projects</a>
+          </span>
+          <span class="link" id="link">
+            <a class="aTag" href="#swapper">Recommendation</a>
+          </span>
+          <span class="link" id="link">
+            <a class="aTag" href="#contact">Contact</a>
+          </span>
         </div>
       </nav>
     </header>
@@ -94,7 +102,7 @@ https://cdn.jsdelivr.net/npm/swiper@11.1.10/swiper-bundle.min.css
           <br />
           <button class="hireMeBtn">
             HIRE ME
-            <img id="nextImg" src="../assests/next.png" alt="next">
+            <img id="nextImg" src="../assests/next.png" alt="next" />
           </button>
         </aside>
         <img class="homeRightImg" src="../assests/homePageImg.svg" alt="" />
@@ -122,7 +130,7 @@ https://cdn.jsdelivr.net/npm/swiper@11.1.10/swiper-bundle.min.css
           <p class="p-heading">
             Lorem, ipsum dolor sit amet consectetur adipisicing !
           </p>
-          <div class="swiper">
+          <div id="swapper" class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
@@ -130,11 +138,11 @@ https://cdn.jsdelivr.net/npm/swiper@11.1.10/swiper-bundle.min.css
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
           </div>
-          <section class="contactAndInfo">
+          <section id="contact" class="contactAndInfo">
             <div class="contact">
               <h1>Leave me Your info</h1>
               <div class="contactInsideDiv">
-                <form action="#" method="post">
+                <form id="contactForm">
                   <div>
                     <label for="name">Your Full Name (required) </label>
                     <input type="text" id="name" name="name" required />
@@ -313,5 +321,26 @@ https://cdn.jsdelivr.net/npm/swiper@11.1.10/swiper-bundle.min.css
     </footer>
 
     <script type="module" src="../js/landingPage.js"></script>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the form from submitting
+
+          // Get the values from the form
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const subject = document.getElementById("subject").value;
+          const message = document.getElementById("message").value;
+
+          // Log the values to the console
+          console.log("Name:", name);
+          console.log("Email:", email);
+          console.log("Subject:", subject);
+          console.log("Message:", message);
+
+          // You can also do further processing here, like sending the data via AJAX
+        });
+    </script>
   </body>
 </html>
