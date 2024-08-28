@@ -7,13 +7,11 @@ const projectListingDiv =
 
 // Define the card HTML as a string
 const cardHTML = (item, i) => {
-
-
   return `
       <div class="card">
         <img
           class="upCardArea"
-          src="../assests/ProjectsImages/Image${i+1}.png"
+          src="../assests/ProjectsImages/Image${i + 1}.png"
           alt=""
         />
         <div class="downCardArea">
@@ -41,7 +39,6 @@ for (let i = 0; i < projects.length; i++) {
   projectListingDiv.insertAdjacentHTML("beforeend", cardHTML(projects[i], i));
 }
 
-
 const swiperSlidesDiv = document.getElementsByClassName("swiper-wrapper")[0];
 
 // Define the card HTML as a string
@@ -52,7 +49,9 @@ const swiperCard = (item, i) => {
       <h3>${item.heading}</h3>
       <p class="p-swiperSlider">${item.description}</p>
       <div class="profile-dec">
-        <img src="../assests/RecommandationsImg/Profile${(i+1) % 3 === 0 ? 3 : (i+1) % 3}.png" alt="">
+        <img src="../assests/RecommandationsImg/Profile${
+          (i + 1) % 3 === 0 ? 3 : (i + 1) % 3
+        }.png" alt="">
         <div >
           <h3>${item.name}</h3>
           <p>${item.role}</p>
@@ -70,8 +69,6 @@ for (let i = 0; i < swiperCardData.length; i++) {
   );
 }
 
-
-
 // Initialize Swiper after adding slides
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
@@ -82,3 +79,4 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
   },
 });
+
